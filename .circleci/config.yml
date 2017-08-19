@@ -1,6 +1,7 @@
 version: 2
 jobs:
   build:
+    working_directory: /go/src/github.com/thomastaylor312/helm-commandeer
     docker:
       - image: circleci/golang:1.8.3
     steps:
