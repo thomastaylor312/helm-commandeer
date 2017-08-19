@@ -1,0 +1,10 @@
+name: "commandeer"
+# Version is the version of Helm plus the number of official builds for this
+# plugin
+version: "2.6.0+1"
+usage: "captures resources running in a Kubernetes cluster into a chart"
+description: "Captures resources running in a Kubernetes cluster into a chart."
+command: "$HELM_PLUGIN_DIR/commandeer"
+useTunnel: true
+hooks:
+  install: "$HELM_PLUGIN_DIR/install-binary.sh"
